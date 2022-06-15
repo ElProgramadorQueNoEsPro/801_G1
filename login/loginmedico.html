@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Vacunin - Medico</title>
+    <link rel="stylesheet" href="stilos/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../recursos/imagenes/favicon.jpg">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../recursos/css/login.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body>   
+    <div class="login-design">
+        <div class="waves">         
+        </div>                             
+            <div class="login" id="acciones">
+                <div class="login-data">                   
+                      <img class="collabcenter" >
+                      <br><h1><span id="titulo">Médico</span></h1>         
+                                        <br><div class="login-content">
+                                            <form action="index.html">                                                                                             
+                                                <div class="input-div">
+                                                       <div class="i">
+                                                        <i class="fas fa-address-card"></i>
+                                                       </div>
+                                                           <div class="div">
+                                                                 <h5>Número de DNI</h5>
+                                                                 <input type="text" class="input R G" maxlength="9">
+                                                           </div>
+                                                   </div>
+                                                </label>                                                                                                  
+                                                        <div class="input-div">
+                                                       <div class="i"> 
+                                                           <i class="fas fa-lock"></i>
+                                                      </div>
+                                                      <div class="div">
+                                                           <h5>Contraseña</h5>
+                                                           <input type="password" class="input R G" maxlength="9">                                   
+                                                   </div>
+                                                </div>
+                                                
+                                            </form>                                           
+                                        </div>                                                                             
+                                        <div class="texto">                                       
+                                        <br><input type="checkbox" name="chkaceptarname" id="chkAceptar" value="acept" checked>
+                                        Acepto y Autorizo el consentimiento libre, expreso, inequívoco, previo e informado sobre el tratamiento y uso que efectuara el aplicativo
+                                        VACUNIN que efectuará sobre la información proporcionada, la misma que podrá ser utilizada para efectos de campañas 
+                                        informativas, conforme a lo dispuesto por la Ley Nro. 29733 y su reglamento. </div>            
+            <div><br><br><input type="submit" value="Iniciar  Sesion" id="btnAceptar"  class="btn-login">
+                 </div>                
+            </div>           
+ </div> 
+</body>
+<div class="pop-wsp">
+    <div class="pop-wsp_txt" id="txt-first">Necesita ayuda<strong>.Chatea con nosotros</strong></div>
+    <div class="pop-wsp_icon" id="btn-icon"></div>
+</div>
+<div class="pop-wsp_chat_box" id="sesamo">
+    <div class="pop-wsp_heading">
+        <span onclick="document.getElementById('sesamo').style.display='none'"class="close" title="Close Modal">×</span>
+        <div class="pop-wsp_title">Iniciar Conversacion</div>
+        <div class="pop-wsp_intro">Inicia la conversacion desde<strong>WhatsApp</strong></div>
+    </div>
+    <div class=".pop-wsp_content" >
+        <div class="pop-wsp_content_list" id="link">
+            <div class="pop-wsp_content_item" id="info">
+                <a class="clasecita"target="_blank" href="https://web.whatsapp.com/send?phone=+51994601837&amp;text=Quiero visualizar mis pacientes">
+                    <div >
+                        <div class="socio"></div>
+                    </div>      
+                    <div class="pop-wsp_txt2" >
+                        <div class="name">Usuario 1</div>
+                        <div class="duty">Soporte Virtual</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>          
+       <script type="text/javascript" src="../recursos/js/focus.js"></script>
+       <script type="text/javascript" src="../recursos/js/general.js"></script>
+       <script type="text/javascript" src="../recursos/js/botonn.js"></script>
+       <script type="text/javascript" src="../recursos/js/login.js?v=0.3"></script>
+</html>

@@ -1,0 +1,126 @@
+.calendario {
+	background: #f9f9f9;
+	color: #0e171c;
+  display: grid;
+	font: 300 100%/1.5em 'Lato', sans-serif;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+h2 {
+	font-size: 2em;
+	line-height: 1.25em;
+	margin: .25em 0;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .33em 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container-calend {
+	width: 510px;
+}
+.calendar {
+	text-align: center;
+}
+.calendar header {
+	position: relative;
+}
+.calendar h2 {
+	text-transform: uppercase;
+}
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.calendar tbody {
+	color: #7c8a95;
+}
+.calendar tbody td:hover {
+	border: 2px solid #00addf;
+}
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+.current-day {
+	background: #00addf;
+	color: #f9f9f9;
+}
+.event {
+	cursor: pointer;
+	position: relative;
+}
+.event:after {
+	background: #00addf;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+.event.current-day:after {
+	background: #f9f9f9;
+}
+.contenedorHorarioTotal {
+    font-size: 20px;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .contenedorHorarioTotal p {
+    text-align: center;
+    margin: auto;
+  }
+  
+  #contenedorHorario {
+    margin-top: 20px;
+    width: 20%;
+    max-width: 20%;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px;
+    -ms-grid-rows: (4fr)[var];
+        grid-template-rows: repeat(var(--grid-rows), 4fr);
+    -ms-grid-columns: (4fr)[var];
+        grid-template-columns: repeat(var(--grid-cols), 4fr);
+  }
+  
+  .grid-item {
+    font-size: 15px;
+    color: #555;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    border-radius: 7px;
+  }
+  
+  .grid-item:hover {
+    background-color: #aaa;
+    cursor: pointer;
+  }

@@ -1,0 +1,11 @@
+.title{
+    width: 100%;
+    text-align: center;
+    background-color:#c484f4;
+}
+.title h1{
+    color: white;
+}
+iframe{
+    width: 100%;
+}

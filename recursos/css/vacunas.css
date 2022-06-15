@@ -1,0 +1,568 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#orden{
+    width: 100%;
+    max-width: 100%;
+}
+.order{
+    width: 98%;
+    max-width:98%;
+    margin: auto;
+}
+.order h1{
+    font-size: 30px;
+    margin: 30px 0px;
+}
+.order p{
+    margin: 20px 0px;
+}
+.date{
+    display: flex;
+    width:100%;
+    max-width: 100%;
+}
+.dat-in,.dat-fn{
+    width: 33.3%;
+    max-width: 33.3%;
+}
+.btns{
+    display: flex;
+    width: 33.3%;
+    max-width: 33.3%;
+}
+.filtrar,.nuevo,.cl-fil{
+    padding: 10px;
+    margin: 5px;
+    background: #2d8dea;
+    border: 0 none;
+    border-radius: 4px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black ;
+}
+.info{
+    display: flex; 
+}
+.num-ord,.fecha,.edad{
+    width: 10%;
+    max-width: 10%;
+    margin: 0px 50px;
+}
+.paciente,.observ{
+    width: 35%;
+    max-width: 35%;
+    margin: 0px 20px;
+}
+.paciente input,.observ input{
+    width: 100%;
+    max-width: 100%;
+}
+
+/*Ventana Nueva Orden */
+
+#myModal{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+.container{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 80%;
+    height:83vh;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    border-radius: 6px;
+}
+
+.close{
+    color: #aaaaaa;
+    font-size: 28px;
+    cursor: pointer;
+    float: right;
+}
+.pri,.seg,.ter,.cua,.quin{
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+}
+.orden{
+    margin: 10px;
+    width: 33.3%;
+    max-width: 33.3%;
+}
+.orden input{
+    padding:7px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.fech-reg{
+    margin: 10px;
+    width: 33.3%;
+    max-width: 33.3%;
+}
+.fech-reg input{
+    padding:5px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.tipo{
+    margin: 10px;
+    width: 33.3%;
+    max-width: 33.3%;
+}
+.tipo input{
+    padding:7px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.doc{
+    margin: 10px;
+    width: 32%;
+    max-width: 32%;
+}
+.doc2{
+    display: flex;
+}
+.doc input[type=number]{
+    padding:7px 0px;
+    width: 50%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.doc input[type=button]{
+    padding:7px 0px;
+    margin: 0px 10px;
+    width:33%;
+    max-width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.pacient{
+    margin: 10px;
+    width: 66%;
+    max-width: 66%;
+}
+.pacient input{
+    padding:7px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.fech-nac{
+    margin: 10px;
+    width: 32%;
+    max-width: 32%;
+}
+.fech-nac input{
+    padding:5px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.edad2{
+    margin: 10px;
+    width: 66%;
+    max-width: 66%;
+}
+.edad2 input{
+    padding:7px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.obser{
+    margin: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+.obser textarea{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+#divLista{
+    width: 95%;
+    max-width: 95%;
+    margin: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #0843aa;
+  color: white;
+}
+.exam{
+    margin: 10px;
+    width: 32%;
+    max-width: 32%;
+}
+.exam input{
+    padding:7px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.lista{
+    margin: 10px;
+    width: 66%;
+    max-width: 66%;
+}
+#myInput{
+background-image: url(searchicon.png);
+background-position: 10px 12px;
+background-repeat: no-repeat;
+width: 100%;
+font-size: 16px;
+padding: 10px 10px 10px 0px;
+border: 1px solid #ddd;
+margin-bottom: 10px;
+}
+.examenes{
+     width: 100%;
+     height: auto; 
+     overflow-y: scroll;
+}
+#exam-list li{
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: block;
+}
+.btn1{
+    width: 30%;
+    max-width: 30%;
+    margin: auto;
+    display: flex;
+}
+.save{
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    margin: 0px 5px;
+    border-radius: 3px;
+    padding: 15px 25px; 
+    color: white;
+}
+.cancel{
+    padding: 15px 25px; 
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    margin: 0px 5px;
+    border-radius: 3px;
+    color: white;
+    }
+.pdf{
+    padding: 15px 30px;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    margin: 0px 5px;
+    border-radius: 3px;
+    color: white;
+}
+
+/*Lista de Paciente*/
+
+#modalpaciente{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.list-pacient{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    border-radius: 6px;
+}
+.cont23{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+.description{
+    width: 50%;
+    max-width: 50%;
+    margin: 10px;
+}
+.description input[type="text"]{
+    padding: 7px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.botons{
+    width: 50%;
+    max-width: 50%;
+    margin: 30px 10px;
+}
+.btn{
+    color: #fff;
+    background: #337ab7;
+    border-color: #2e6da4;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/*PACIENTE*/
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.panel-body{
+    padding: 15px;
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    border-radius: 6px;
+}
+.fir,.second,.thre,.four{
+    display: flex;
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+}
+.five{
+    width: 30%;
+    max-width: 30%;
+    margin: auto;
+}
+.inf{
+    margin: 10px;
+    width: 33.3%;
+    max-width: 33.3%;
+}
+.inf input{
+    padding: 7px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.inf select{
+    padding: 7px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.message{
+    width: 100%;
+    max-width: 98%;
+    margin:10px;
+}
+.message input{
+    padding: 7px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.botns{
+    text-align: center;
+}
+.cancel2{
+    color: #fff;
+    background: #d9534f;
+    border-color: #d43f3a;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+@media(max-width:1024px){
+    /* Nueva Orden */
+    .order{
+        width: 100%;
+        max-width: 100%;
+    }
+    .container{
+        width: 90%;
+    }
+    .num-ord,.fecha,.edad{
+        width: 25%;
+        max-width: 25%;
+        margin: 0px 10px;
+    }
+    .pri,.seg,.ter,.cua,.quin{
+        width: 100%;
+        max-width: 100%;
+    }
+    #myInput{
+        padding: 10px 10px 10px 0px;
+    }
+    .pdf{
+        padding: 8px 30px;
+    }
+    .list-pacient{
+        width: 80%;
+    }
+    .modal-content{
+        width: 70%;
+    }
+}
+@media(max-width:765px){
+    .date{
+        display: block;
+    }
+    .btns{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    .info{
+        display: block;
+    }
+    .order h1,.order p{
+        margin: 30px 15px;
+    }
+    .btn1{
+        width: 50%;
+        max-width: 50%;
+    }
+    .dat-in,.dat-fn{
+        margin: 10px;
+    }
+    .num-ord,.fecha,.edad{
+        margin: 0px 20px;
+        width: 50%;
+        max-width: 50%;
+    }
+    .cont23{
+        display: block;
+        margin: 15px 0px;
+    }
+    .paciente,.observ{
+        width: 50%;
+        max-width: 50%;
+    }
+    .botns{
+        display: flex;
+    }
+    .botons{
+        margin: 10px 0px;
+    }
+    .pri,.seg,.ter,.quin{
+        display: block;
+    }
+    .orden,.fech-reg,.tipo,.pacient,.fech-nac,.edad2{
+        width: 96%;
+        max-width: 100%;
+    }
+    .doc{
+        width: 90%;
+        max-width: 100%;    
+    }
+    .btn{
+        margin: 0px 10px;
+    }
+    .fir,.second,.thre,.four{
+        display: block;
+    }
+    .inf{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width:630px){
+    .btn1{
+        width:70%;
+        max-width: 70%;
+    }
+}
+@media(max-width:540px){
+    .paciente,.observ{
+        width: 75%;
+        max-width: 75%;
+    }
+    .btn{
+        width: 55%;
+        max-width: 55%;
+    }
+    .botons{
+        display: flex;
+    }
+    .btn1{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width:430px){
+    .five{
+        width: 72%;
+        max-width: 72%;
+    }
+    .btn1{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .save,.cancel{
+        padding:5px 15px;
+    }
+}
+@media(max-width:380px){
+  .btn{
+      width: 100%;
+      max-width: 93%;
+  }
+  .save,.pdf{
+      margin: 0;
+  }
+}
+
